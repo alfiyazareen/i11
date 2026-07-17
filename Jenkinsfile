@@ -16,7 +16,7 @@ pipeline{
         }
         stage('Build Docker Image'){
             steps{
-                sh 'docker build-t java-demo:latest .'
+                sh 'docker build -t java-demo:latest .'
             }
         }
         stage('Deploy'){
