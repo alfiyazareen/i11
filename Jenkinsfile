@@ -6,7 +6,7 @@ Pipeline{
         stages{
            stage('checkout'){
                steps{
-                  git ' '
+                  git 'https://github.com/alfiyazareen/i11.git'
                }
            }
            stage('Build'){
