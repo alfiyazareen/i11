@@ -1,0 +1,13 @@
+Kind : Deployment
+metadata :
+  name: java-demo
+  spec:
+    replicas: 1
+    selector:
+      matchLabels :
+        app : java-demo
+      spec:
+        container :
+          -name : java-demo
+          image: java-demo
+          imagePullPolicy: Never

@@ -1,0 +1,9 @@
+Kind: service
+metadata: java-demo-service
+spec:
+  selector:
+    app: java-demo
+    ports:
+      -ports: 8081
+      targetPorts: 8081
+      type: NodePort
