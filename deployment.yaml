@@ -21,4 +21,4 @@ spec:
           image: java-demo:latest
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080
+            - containerPort: 8081

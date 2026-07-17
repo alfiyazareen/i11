@@ -10,7 +10,7 @@ spec:
     app: java-demo
 
   ports:
-    - port: 80
-      targetPort: 8080
+    - port: 81
+      targetPort: 8081
 
   type: NodePort
