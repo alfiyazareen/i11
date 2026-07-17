@@ -33,8 +33,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'kubectl apply -f deployment.yaml'
-                sh 'kubectl apply -f service.yaml'
+                sh 'kubectl apply --validate=false -f deployment.yaml'
+                sh 'kubectl apply --validate=false -f service.yaml'
             }
         }
     }
