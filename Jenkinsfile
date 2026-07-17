@@ -19,6 +19,11 @@ pipeline {
                 sh 'docker build -t java-demo:latest .'
             }
         }
+        stage{
+            steps{
+                test '--validate=false'
+            }
+        }
 
         stage('Deploy') {
             steps {
